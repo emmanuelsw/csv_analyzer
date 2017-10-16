@@ -1,0 +1,19 @@
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: csv_analyzer_development
+
+test:
+  <<: *default
+  database: csv_analyzer_test
+
+production:
+  <<: *default
+  database: csv_analyzer_production
+  username: csv_analyzer
+  password: <%= ENV['csv_analyzer_DATABASE_PASSWORD'] %>ß
