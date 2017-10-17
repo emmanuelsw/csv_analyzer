@@ -12,7 +12,14 @@
 							<p class="heading">Analyzed Rows</p>
 							<p id="analyzed-rows" class="title">0</p>
 						</div>
-						<progress id="progress" class="progress is-primary is-margin-top" value="0" max="4000"></progress>
+						<progress id="progress" class="progress is-primary is-margin-top" value="0" max="5000"></progress>
+
+						<%= link_to root_path, id: 'return-btn', class: 'button is-primary hidden' do %>
+							<span class="icon">
+								<i class="fa fa-arrow-circle-left"></i>
+							</span>
+							<span>Return</span>
+						<% end%>
 					</div>
 	
 				</div>

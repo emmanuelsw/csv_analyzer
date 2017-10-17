@@ -7,7 +7,8 @@ class AnalyzerJob < ApplicationJob
     csv.each_with_index do |row, index|
       name, genre, country = row
       Movie.create(name: name, genre: genre, country: country)
-      ActionCable.server.broadcast "analyzer_channel", index + 1
+      ActionCable.server.broadcast "analyzer_channel", row: index + 1
     end
   end
+  
 end
