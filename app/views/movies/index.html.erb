@@ -1,2 +1,36 @@
-<h1>Movies#index</h1>
-<p>Find me in app/views/movies/index.html.erb</p>
+<section class="section">
+	<div class="container">
+		<div class="columns is-mobile is-centered">
+			<div class="column is-6">
+				<%= form_tag 'analyze', remote: true, multipart: true do %>
+
+					<div class="logo has-text-centered">
+						<%= image_tag 'csv-logo.svg' %>
+					</div>
+
+					<!-- File upload -->
+					<div class="box has-text-centered">
+						<div class="file is-centered has-name is-boxed">
+							<label class="file-label">
+								<%= file_field_tag 'file', id: 'file', class: 'file-input' %>
+								<span class="file-cta">
+									<span class="file-icon">
+										<i class="fa fa-upload"></i>
+									</span>
+									<span class="file-label">
+										Choose a CSV file…
+									</span>
+								</span>
+								<span id="filename" class="file-name has-text-centered">
+									No file selected
+								</span>
+								<%= button_tag 'Analyze', class: 'button is-medium is-margin-top is-primary' %>
+							</label>
+						</div>
+					</div>
+
+				<% end %>
+			</div>
+		</div>
+	</div>
+</section>
