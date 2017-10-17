@@ -1,24 +1,5 @@
-# README
+# CSV Analyzer
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+CSV Analyzer using Background Jobs and ActionCable
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![GIF](https://github.com/emmanuelsw/csv_analyzer/blob/master/csv_demo_gif.gif?raw=true)
